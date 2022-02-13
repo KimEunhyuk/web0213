@@ -16,16 +16,9 @@ import applicant.model.dto.CertificateDTO;
 @WebServlet("/controller")
 public class ApplicantController extends HttpServlet {
 	
-	public ApplicantController() {
-        super();
-    }
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		process(request, response);
-	}
-	
-	protected void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
 		
 		//요청 정보에 한해서 한글인 경우에 인코딩 처리하는 설정
 		request.setCharacterEncoding("utf-8");
