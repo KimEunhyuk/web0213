@@ -100,7 +100,7 @@ public class ApplicantController extends HttpServlet {
 	}
 	
 	public void applicant1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "showError.jsp";
+		String url = "showError2.jsp";
 		try {
 			ApplicantDTO applicant = ApplicantService.getApplicant(request.getParameter("id"));
 			HttpSession session = request.getSession();
